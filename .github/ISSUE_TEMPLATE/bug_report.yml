@@ -1,0 +1,57 @@
+name: Bug report
+description: Something in Klar doesn't work the way it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please redact API keys and site IDs from anything you paste.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, and what Klar did instead of what you expected.
+      placeholder: I added the script to my Next.js app, and the dashboard stayed at zero pageviews.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Paste the snippet into app/layout.tsx
+        2. Deploy
+        3. Visit the site, wait a minute, reload the dashboard
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Where
+      description: The page or dashboard view it happens on. A public URL helps most; leave blank if you'd rather not.
+      placeholder: https://example.com/pricing
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part
+      options:
+        - Tracker script / no data arriving
+        - Dashboard numbers look wrong
+        - Funnels or goals
+        - Custom events
+        - Signup, login or account
+        - Docs
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and framework
+      placeholder: Chrome 140 on macOS, SvelteKit 2
+  - type: textarea
+    id: console
+    attributes:
+      label: Console or network errors
+      description: Anything red in the browser console, or the response from the collect request.
+      render: text

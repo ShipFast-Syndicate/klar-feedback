@@ -1,0 +1,27 @@
+name: Feature request
+description: Something Klar should do and doesn't
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The problem, not the solution — it often has an answer we hadn't thought of.
+      placeholder: I run six client sites and I want one weekly email covering all of them.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it today?
+      description: Including "I use another tool for this" — that's useful to know.
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How much does this matter to you?
+      options:
+        - Nice to have
+        - It's a regular annoyance
+        - It's blocking me from using Klar
+    validations:
+      required: true

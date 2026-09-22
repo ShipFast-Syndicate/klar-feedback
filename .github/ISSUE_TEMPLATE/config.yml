@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/ShipFast-Syndicate/klar-feedback/blob/main/SECURITY.md
+    about: Please report privately by email — not as a public issue.
+  - name: Account or billing question
+    url: mailto:klar-support@alphabros.eu
+    about: Anything involving your account can't be discussed in public. Email us.
+  - name: Documentation
+    url: https://klar.alphabros.eu/docs
+    about: Installation, SPA setup, custom events and the API.

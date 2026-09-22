@@ -1,0 +1,19 @@
+name: Question
+description: You're not sure how something works
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: The [docs](https://klar.alphabros.eu/docs) cover installation, SPAs, custom events and the API — but if the answer isn't there, that's a docs bug and we'd like to know.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: looked
+    attributes:
+      label: Where did you look first?
+      description: Tells us which page should have answered it.
+      placeholder: /docs/integration
